@@ -26,3 +26,7 @@
 
 <%= link_to 'Edit', edit_recipe_path(@recipe) %> |
 <%= link_to 'Back', recipes_path %>
+
+<% if @recipe.image? %>
+      <%= image_tag @recipe.image.url, class: "recipe-show" %>
+<% end %>

@@ -42,4 +42,11 @@
       <%= form.add_nested_fields_link :steps %>
   </div>
 
-<% end %>
+  <div class="form-group">
+    <%= form.file_field :image %>
+    <% if @recipe.image? %> 
+      <%= image_tag @recipe.image.url, class: "recipe-show" %>
+      <%= form.check_box :remove_image %>
+        Remove Image   
+    <% end %> 
+  </div>
