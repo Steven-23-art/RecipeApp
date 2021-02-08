@@ -30,7 +30,7 @@ gem 'bootsnap', '>= 1.4.2', require: false
 gem 'bootstrap', '~>4.1.3'
 gem 'jquery-rails'
 gem 'nested_form_fields'
-gem 'carrierwave', '~> 2.0'
+gem 'carrierwave', '~> 2.1'
 
 group :production do 
   gem 'pg'
